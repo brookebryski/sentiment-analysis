@@ -58,7 +58,7 @@ module Sentiment
     end
 
     def clean(text)
-      replacements = %w(. , % ! ? ( ) [ ]).map { |r| text.gsub!(r, '') }
+      %w(. , % ! ? ( ) [ ]).map { |r| text.gsub!(r, '') }
 
       text.downcase
     end
